@@ -16,12 +16,3 @@
     "@vitejs/plugin-react": "^4.0.0"
   }
 }
-```
-
-Click **"Commit changes"** then immediately create the next file.
-
----
-
-**File 5 — type this as the filename:**
-```
-vite.config.js
