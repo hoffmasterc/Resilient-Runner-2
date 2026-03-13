@@ -1143,7 +1143,7 @@ function AppShell() {
         <ErrBoundary key={screen}>
           <div key={screen} className={`scroll ${animClass}`} style={{flex:1}}>
             <div style={{padding:`${SP.xl}px ${SP.xl}px`,paddingBottom:`calc(${SP.xxxl}px + env(safe-area-inset-bottom))`}}>
-              <MainPanel/>
+              {MainPanel()}
             </div>
           </div>
         </ErrBoundary>
@@ -1180,7 +1180,7 @@ function AppShell() {
           {/* Primary panel */}
           <div key={screen} className={`scroll ${animClass}`} style={{flex:showSecondPanel?`0 0 ${isDesktop?"420px":"100%"}`:"1 1 auto",minWidth:0,borderRight:showSecondPanel?`1px solid ${C.border}`:"none"}}>
             <div style={{padding:`${SP.xl}px ${SP.xxl}px`,maxWidth:showSecondPanel?undefined:860,margin:showSecondPanel?undefined:"0 auto"}}>
-              <ErrBoundary key={screen}><MainPanel/></ErrBoundary>
+              <ErrBoundary key={screen}>{MainPanel()}</ErrBoundary>
             </div>
           </div>
 
